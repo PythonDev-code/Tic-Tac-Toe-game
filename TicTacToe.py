@@ -1,6 +1,11 @@
 #Code tissue
 import turtle
 import time
+print("This is the position of the numbers:"
+      "\n|7|8|9|"
+      "\n|4|5|6|"
+      "\n|1|2|3|")
+
 t = turtle.Turtle()
 s = turtle.Screen()
 move_list = []
@@ -8,6 +13,8 @@ move_2 = []
 
 
 def circle():
+    t.pensize(10)
+    t.color("blue")
     t.pendown()
     r = 40
     t.circle(r)
@@ -15,6 +22,8 @@ def circle():
 
 #Code tissue
 def letterX(t,length):
+    t.pensize(10)
+    t.color("red")
     t.down()
     t.right(45)
     t.forward(length/2)
@@ -37,7 +46,7 @@ def letterX(t,length):
 #Code tissue
 ws = turtle.Screen()
 t.color("Green")
-t.width("2")
+t.width("10")
 t.speed(2)
 for i in range(4):
     t.forward(300)
@@ -128,7 +137,6 @@ while number == 1:
     if is_subset == True:
         print("Congrats player 1 you won")
         break
-    print(move_1)
 
 
     if Move == 1:
